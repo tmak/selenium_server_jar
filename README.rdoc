@@ -1,0 +1,27 @@
+= selenium_server_jar
+
+A wrapper gem for the selenium server jar.
+
+
+== Install
+
+sudo gem install tmak-selenium_server_jar --source http://gems.github.com
+
+
+== Example
+
+begin
+  require "selenium_server_jar"
+rescue LoadError
+  require "rubygems"
+  gem "tmak-selenium_server_jar"
+  require "selenium_server_jar"
+end
+
+SeleniumServerJar.file_path
+
+
+== Copyright
+
+Copyright (c) 2009 Thomas Marek. See LICENSE for details.
+
